@@ -1,3 +1,12 @@
+/* Contoh helper splitText yang biasanya ada di tutorial */
+function splitText(selector, options) {
+    const element = document.querySelector(selector);
+    element.innerHTML = element.textContent.replace(/\S/g, "<span class='char'>$&</span>");
+    return {
+        chars: element.querySelectorAll('.char')
+    };
+}
+
 /*=============== HOME SPLIT TEXT ===============*/
 const { animate, text, stagger } = anime
 
@@ -27,7 +36,23 @@ animate(chars2, {
 })
 
 /*=============== SWIPER PROJECTS ===============*/
+const swiperProjects = new Swiper('.projects__swiper', {
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 'auto',
+  grabCursor: true,
+  speed: 600,
 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  }
+})
 
 /*=============== WORK TABS ===============*/
 
