@@ -74,10 +74,47 @@ tabs.forEach((tab) => {
 })
 
 /*=============== SERVICES ACCORDION ===============*/
+const servicesButtons = document.querySelectorAll('.services__button')
 
+servicesButtons.forEach(button => {
+  // Add your height to services info
+  const heightInfo = document.querySelector('.services__info')
+  heightInfo.computedStyleMap.height = heightInfo.scrollHeight + 'px'
+
+  button.addEventListener('click', () => {
+    const servicesCards = document.querySelectorAll('.services__card'),
+          currentCard = button.parentNode,
+          currentInfo = currentCard.querySelector('.services__info'),
+          isCardOpen = currentCard.classList.contains('services-open')
+
+    // Close All other services info
+    servicesCards.forEach(card => {
+      card.classList.replace('services-open', 'services-close')
+
+      const info = card.querySelector('.services__info')
+            info.computedStyleMap.height = '0'
+    })
+
+    // Open only if not already open
+    if(!isCardOpen){
+      currentCard.classList.replace('services-close', 'services-open')
+      currentInfo.computedStyleMap.height = currentInfo.scrollHeight + 'px'
+    }
+  })
+})
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
+// Duplicate images to make the animation work
+const tracks = document.querySelectorAll('.testimonials__content')
 
+tracks.forEach(track => {
+  const cards = [...track.children] // spread to make a static copy
+
+  // Duplicate cards only once
+  for (const card of cards) {
+    track.appendChild(card.cloneNode(true))
+  }
+})
 
 /*=============== COPY EMAIL IN CONTACT ===============*/
 
