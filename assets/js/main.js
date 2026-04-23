@@ -140,7 +140,24 @@ const textYear = document.getElementById('footer-year'),
 textYear.textContent = currentYear
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
 
+const scrollActive = () => {
+  // We get the position by scrolling down
+  const scrollY = window.scrollY
+
+  sections.forEach(section => {
+    const id = section.id, // id for each section
+          top = section.offsetTop - 50, // Distance from the top edge
+          height = section.offsetHeight, // Element height
+          link = document.querySelector('.nav__menu a[href*=' + id +']') // id nav link 
+
+    if(!link) return
+
+    link.classList.toggle('active-link', scrollY > top && scrollY <= top + height)
+  })
+}
+window.addEventListener('scroll', scrollActive)
 
 /*=============== CUSTOM CURSOR ===============*/
 
