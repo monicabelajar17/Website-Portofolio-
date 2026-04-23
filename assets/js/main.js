@@ -160,7 +160,25 @@ const scrollActive = () => {
 window.addEventListener('scroll', scrollActive)
 
 /*=============== CUSTOM CURSOR ===============*/
+const cursor = document.querySelector('.cursor')
+let mouseX = 0, mouseY = 0 // Store mouse position
 
+const cursorMove = () => {
+  // Position the cursor
+  cursor.style.left = `${mouseX}px`
+  cursor.style.top = `${mouseY}px`
+  cursor.style.transform = 'translate(-50%, -50%)'
+
+  // Update the cursor animation
+  requestAnimationFrame(cursorMove)
+}
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX
+  mouseY = e.clientY
+})
+
+cursorMove()
 
 /* Hide custom cursor on links */
 

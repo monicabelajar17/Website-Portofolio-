@@ -183,7 +183,24 @@ img {
 
 
 /* Hide the custom cursor */
-
+.cursor{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  background-color: var(--first-color-light);
+  border-radius: 50%;
+  box-shadow: 0 0 30px var(--first-color);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: transform .2s ease-out,
+              left .2s ease-out,
+              top .2s ease-out,
+              width .3s,
+              height .3s; 
+}
 
 /*=============== HEADER & NAV ===============*/
 .header{
