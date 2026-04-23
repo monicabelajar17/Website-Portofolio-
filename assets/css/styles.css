@@ -180,9 +180,6 @@ img {
 }
 
 /*=============== CUSTOM CURSOR ===============*/
-
-
-/* Hide the custom cursor */
 .cursor{
   position: fixed;
   left: 0;
@@ -200,6 +197,12 @@ img {
               top .2s ease-out,
               width .3s,
               height .3s; 
+}
+
+/* Hide the custom cursor */
+.hide-cursor{
+  width: 0;
+  height: 0;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -1329,6 +1332,15 @@ img {
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
-
+@media screen and (min-width: 2048px){
+  body{
+    zoom: 1.4;
+  }
+}
 
 /* Custom cursor is hidden for mobile devices */
+@media (pointer: coarse){
+  .cursor{
+    display: none;
+  }
+}
