@@ -16,7 +16,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website Anid - Bedimcode</title>
+      <title>Portofolio Monica Karina</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -24,23 +24,27 @@
          <div class="blob-animate"></div>
 
          <nav class="nav container">
-            <a href="#" class="nav__logo">Monica</a>
-            <div class="nav__menu">
-               <ul class="nav__list">
-                  <li>
-                     <a href="#about" class="nav__link">About Me</a>
-                  </li>
+   <!-- Logo kamu -->
+   <a href="#" class="nav__logo">Monica</a>
 
-                  <li>
-                     <a href="#projects" class="nav__link">Projects</a>
-                  </li>
+   <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+         <li><a href="#about" class="nav__link">About Me</a></li>
+         <li><a href="#projects" class="nav__link">Projects</a></li>
+         <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
 
-                  <li>
-                     <a href="#contact" class="nav__link">Contact</a>
-                  </li>
-               </ul>
-            </div>
-         </nav>
+      <!-- Tombol Close -->
+      <div class="nav__close" id="nav-close">
+         <i class="ri-close-line"></i>
+      </div>
+   </div>
+
+   <!-- Tombol Hamburger (Hanya muncul di mobile) -->
+   <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-line"></i>
+   </div>
+</nav>
       </header>
 
       <!--==================== MAIN ====================-->
@@ -72,20 +76,20 @@
                </div>
 
                <div class="home__social">
-                  <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
-                     <i class="ri-linkedin-box-line"></i>
+                  <a href="https://www.instagram.com/monicakayinaaa18_" target="_blank" class="home__social-link">
+                     <i class="ri-instagram-line"></i>
                   </a>
 
                   <a href="https://github.com/monicabelajar17" target="_blank" class="home__social-link">
                      <i class="ri-github-line"></i>
                   </a>
 
-                  <a href="https://dribbble.com" target="_blank" class="home__social-link">
-                     <i class="ri-dribbble-line"></i>
+                  <a href="https://t.me/monicakayin" target="_blank" class="home__social-link">
+                     <i class="ri-telegram-2-line"></i>
                   </a>
 
-                  <a href="https://about.gitlab.com" target="_blank" class="home__social-link">
-                     <i class="ri-gitlab-line"></i>
+                  <a href="https://api.whatsapp.com/send?phone=+6285872687184&text=Hello,%20more%20information!" target="_blank" class="home__social-link">
+                     <i class="ri-whatsapp-line"></i>
                   </a>
                </div>
 
@@ -107,7 +111,7 @@
                   </h2>
 
                   <p class="about__description">
-                     Saya merupakan lulusan dari SMK Brantas Karangkates jurusan Rekayasa Perangkat Lunak dengan minat di bidang <b>Pengembangan Perangkat Lunak dan Gim.</b> Memiliki kemampuan komunikasi yang baik, mampu bekerja dalam tim, cepat beradaptasi, serta tertarik pada posisi <b>Mobile Developer dan Software Developer.</b> Siap belajar, berkembang, dan menghadapi tantangan di dunia industri teknologi.
+                     Lulusan SMK jurusan <b>Rekayasa Perangkat Lunak </b> yang memiliki pengalaman dalam <b>pengembangan website dan aplikasi mobile. </b> Terbiasa bekerja dengan teknologi pemrograman untuk membangun aplikasi yang fungsional dan mudah digunakan. Memiliki kemampuan <b>komunikasi yang baik </b>sehingga dapat bekerja sama secara efektif dalam tim untuk mencapai tujuan bersama. Saya juga memiliki semangat belajar tinggi, <b>siap menghadapi tantangan baru,</b> dan terus mengembangkan kemampuan di bidang teknologi informasi.
                   </p>
 
                   <a href="assets/pdf/CV-MONICA KARINA PUTRI.pdf" download target="_blank" class="button">
@@ -127,7 +131,7 @@
          <section class="projects section" id="projects">
             <h2 class="section__title">
                Saya Membuat Beberapa <br>
-               <span>Project</span>
+               <span>Proyek</span>
             </h2>
 
             <div class="projects__container container grid">
@@ -138,20 +142,24 @@
 
                         <div class="projects__number">
                            <h1>01</h1>
-                           <h3>Web</h3>
+                           <h3>Desain</h3>
                         </div>
 
                         <div class="projects__data">
-                           <h1 class="projects__title">Barbershop <br> website</h1>
-                           <p class="projects__subtitle">Technologies used</p>
-                           <p class="projects__description">HTML, CSS, JavaScript, and Figma</p>
+                           <h1 class="projects__title">Desain <br> canva</h1>
+                           <p class="projects__subtitle">Desain thumbnail</p>
+                           <p class="projects__description">Mendesain thumbnail menarik dan profesional menggunakan Canva untuk kebutuhan promosi serta media digital.</p>
                         </div>
 
                         <div class="projects__image">
-                           <img src="assets/img/projects-1.png" alt="image" class="projects">
-                           <a href="#" target="_blank" class="projects__button">
+                           <img src="assets/img/projects-1.png" alt="image" class="projects__img">
+                              <a href="#" class="projects__button open-project"
+                              data-title="Desain canva"
+                              data-subtitle="Desain thumbnail"
+                              data-desc="Mendesain thumbnail menarik dan profesional menggunakan Canva untuk kebutuhan promosi serta media digital."
+                              data-img="assets/img/projects-1.png">
                               <i class="ri-arrow-right-up-long-line"></i>
-                           </a>
+                              </a>
                         </div>
                      </article>
 
@@ -160,20 +168,24 @@
 
                         <div class="projects__number">
                            <h1>02</h1>
-                           <h3>Design</h3>
+                           <h3>Desain</h3>
                         </div>
 
                         <div class="projects__data">
-                           <h1 class="projects__title">Interface Design <br> For Ice Cream Shop</h1>
-                           <p class="projects__subtitle">Technologies used</p>
-                           <p class="projects__description">HTML, CSS, JavaScript, and Figma</p>
+                           <h1 class="projects__title">Desain <br> UI/UX</h1>
+                           <p class="projects__subtitle">Desain UI/UX menggunakan Figma</p>
+                           <p class="projects__description">Merancang UI/UX aplikasi peminjaman alat dengan tampilan modern, mudah digunakan, dan berfokus pada kenyamanan pengguna.</p>
                         </div>
 
                         <div class="projects__image">
-                           <img src="assets/img/projects-2.png" alt="image" class="projects">
-                           <a href="#" target="_blank" class="projects__button">
-                              <i class="ri-arrow-right-up-long-line"></i>
-                           </a>
+                           <img src="assets/img/projects-2.png" alt="image" class="projects__img">
+                              <a href="#" class="projects__button open-project"
+                                 data-title="Desain UI/UX"
+                                 data-subtitle="Desain UI/UX menggunakan Figma"
+                                 data-desc="Merancang UI/UX aplikasi peminjaman alat dengan tampilan modern, mudah digunakan, dan berfokus pada kenyamanan pengguna."
+                                 data-img="assets/img/projects-2.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
                         </div>
                      </article>
 
@@ -182,20 +194,24 @@
 
                         <div class="projects__number">
                            <h1>03</h1>
-                           <h3>Web</h3>
+                           <h3>Mobile App</h3>
                         </div>
 
                         <div class="projects__data">
-                           <h1 class="projects__title">SEO For Coffe <br> website</h1>
-                           <p class="projects__subtitle">Technologies used</p>
-                           <p class="projects__description">HTML, CSS, JavaScript, and Figma</p>
+                           <h1 class="projects__title">Mobile App <br> Muslim Daily</h1>
+                           <p class="projects__subtitle">Menggunakan framework Flutter</p>
+                           <p class="projects__description">Mengembangkan aplikasi mobile menggunakan Flutter dengan fitur tracking ibadah harian serta dilengkapi dengan Al-Quran digital.</p>
                         </div>
 
                         <div class="projects__image">
-                           <img src="assets/img/projects-3.png" alt="image" class="projects">
-                           <a href="#" target="_blank" class="projects__button">
-                              <i class="ri-arrow-right-up-long-line"></i>
-                           </a>
+                           <img src="assets/img/projects-3.png" alt="image" class="projects__img">
+                              <a href="#" class="projects__button open-project"
+                                 data-title="Mobile App Muslim Daily"
+                                 data-subtitle="Menggunakan framework Flutter"
+                                 data-desc="Mengembangkan aplikasi mobile menggunakan Flutter dengan fitur tracking ibadah harian serta dilengkapi dengan Al-Quran digital."
+                                 data-img="assets/img/projects-3.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
                         </div>
                      </article>
 
@@ -204,20 +220,24 @@
 
                         <div class="projects__number">
                            <h1>04</h1>
-                           <h3>Design</h3>
+                           <h3>Game 2D</h3>
                         </div>
 
                         <div class="projects__data">
-                           <h1 class="projects__title">Web Design <br> For Restaurant</h1>
-                           <p class="projects__subtitle">Technologies used</p>
-                           <p class="projects__description">HTML, CSS, JavaScript, and Figma</p>
+                           <h1 class="projects__title">Game <br> Aligatri</h1>
+                           <p class="projects__subtitle">Menggunakan Pygame</p>
+                           <p class="projects__description">Mengembangkan game 2D menggunakan Python dan Pygame dengan gameplay interaktif serta desain yang menarik.</p>
                         </div>
 
                         <div class="projects__image">
-                           <img src="assets/img/projects-4.png" alt="image" class="projects">
-                           <a href="#" target="_blank" class="projects__button">
-                              <i class="ri-arrow-right-up-long-line"></i>
-                           </a>
+                           <img src="assets/img/projects-4.png" alt="image" class="projects__img">
+                           <a href="#" class="projects__button open-project"
+                                 data-title="Game Aligatri"
+                                 data-subtitle="Menggunakan Pygame"
+                                 data-desc="Mengembangkan game 2D menggunakan Python dan Pygame dengan gameplay interaktif serta desain yang menarik."
+                                 data-img="assets/img/projects-4.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
                         </div>
                      </article>
 
@@ -230,42 +250,169 @@
                         </div>
 
                         <div class="projects__data">
-                           <h1 class="projects__title">Fast Food <br> website</h1>
-                           <p class="projects__subtitle">Technologies used</p>
-                           <p class="projects__description">HTML, CSS, JavaScript, and Figma</p>
+                           <h1 class="projects__title">SIMMAS <br> website</h1>
+                           <p class="projects__subtitle">Menggunakan Next.JS</p>
+                           <p class="projects__description">Mengembangkan sistem manajemen magang siswa menggunakan Next.js dengan fitur pengelolaan data, monitoring, dan antarmuka responsif.</p>
                         </div>
 
                         <div class="projects__image">
-                           <img src="assets/img/projects-5.png" alt="image" class="projects">
-                           <a href="#" target="_blank" class="projects__button">
-                              <i class="ri-arrow-right-up-long-line"></i>
-                           </a>
+                           <img src="assets/img/projects-5.png" alt="image" class="projects__img">
+                           <a href="#" class="projects__button open-project"
+                                 data-title="SIMMAS website"
+                                 data-subtitle="Menggunakan Next.js"
+                                 data-desc="Mengembangkan sistem manajemen magang siswa menggunakan Next.js dengan fitur pengelolaan data, monitoring, dan antarmuka responsif."
+                                 data-img="assets/img/projects-5.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
+                        </div>
+                     </article>
+
+                     <article class="projects__card swiper-slide">
+                        <div class="blob"></div>
+
+                        <div class="projects__number">
+                           <h1>06</h1>
+                           <h3>Desain</h3>
+                        </div>
+
+                        <div class="projects__data">
+                           <h1 class="projects__title">Desain <br> Aplikasi Kasir</h1>
+                           <p class="projects__subtitle">Desain menggunakan Figma</p>
+                           <p class="projects__description">Merancang UI aplikasi kasir menggunakan Figma dengan tampilan modern, terstruktur, dan menarik.</p>
+                        </div>
+
+                        <div class="projects__image">
+                           <img src="assets/img/projects-6.png" alt="image" class="projects__img">
+                           <a href="#" class="projects__button open-project"
+                                 data-title="Desain Aplikasi Kasir"
+                                 data-subtitle="Desain menggunakan Figma"
+                                 data-desc="Merancang UI aplikasi kasir menggunakan Figma dengan tampilan modern, terstruktur, dan menarik."
+                                 data-img="assets/img/projects-6.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
+                        </div>
+                     </article>
+
+                     <article class="projects__card swiper-slide">
+                        <div class="blob"></div>
+
+                        <div class="projects__number">
+                           <h1>07</h1>
+                           <h3>Desain</h3>
+                        </div>
+
+                        <div class="projects__data">
+                           <h1 class="projects__title">Desain UI/UX <br> Game</h1>
+                           <p class="projects__subtitle">Desain menggunakan Figma</p>
+                           <p class="projects__description">Merancang desain antarmuka game menggunakan Figma dengan tampilan menarik, kreatif, dan interaktif.</p>
+                        </div>
+
+                        <div class="projects__image">
+                           <img src="assets/img/projects-7.png" alt="image" class="projects__img">
+                           <a href="#" class="projects__button open-project"
+                                 data-title="Desain UI/UX Game"
+                                 data-subtitle="Desain menggunakan Figma"
+                                 data-desc="Merancang desain antarmuka game menggunakan Figma dengan tampilan menarik, kreatif, dan interaktif."
+                                 data-img="assets/img/projects-7.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
+                        </div>
+                     </article>
+
+                     <article class="projects__card swiper-slide">
+                        <div class="blob"></div>
+
+                        <div class="projects__number">
+                           <h1>08</h1>
+                           <h3>Game 2D</h3>
+                        </div>
+
+                        <div class="projects__data">
+                           <h1 class="projects__title">Game <br> Wormy 2D</h1>
+                           <p class="projects__subtitle">Menggunakan Pygame</p>
+                           <p class="projects__description">Mengembangkan game 2D Wormy menggunakan Python dan Pygame dengan gameplay interaktif serta mekanisme kontrol pergerakan karakter.</p>
+                        </div>
+
+                        <div class="projects__image">
+                           <img src="assets/img/projects-8.png" alt="image" class="projects__img">
+                           <a href="#" class="projects__button open-project"
+                                 data-title="Game Wormy 2D"
+                                 data-subtitle="Menggunakan Pygame"
+                                 data-desc="Mengembangkan game 2D Wormy menggunakan Python dan Pygame dengan gameplay interaktif serta mekanisme kontrol pergerakan karakter."
+                                 data-img="assets/img/projects-8.png">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
+                        </div>
+                     </article>
+
+                     <article class="projects__card swiper-slide">
+                        <div class="blob"></div>
+
+                        <div class="projects__number">
+                           <h1>09</h1>
+                           <h3>Video</h3>
+                        </div>
+
+                        <div class="projects__data">
+                           <h1 class="projects__title">Editing <br> Video</h1>
+                           <p class="projects__subtitle">Menggunakan Canva</p>
+                           <p class="projects__description">Membuat dan mengedit video promosi menggunakan Canva untuk menghasilkan konten visual yang menarik dan informatif</p>
+                        </div>
+
+                        <div class="projects__image">
+                           <img src="assets/img/projects-9.jpg" alt="image" class="projects__img">
+                           <a href="#" class="projects__button open-project"
+                                 data-title="Editing Video"
+                                 data-subtitle="Menggunakan Canva"
+                                 data-desc="Membuat dan mengedit video promosi menggunakan Canva untuk menghasilkan konten visual yang menarik dan informatif"
+                                 data-img="assets/img/projects-9.jpg">
+                                 <i class="ri-arrow-right-up-long-line"></i>
+                                 </a>
                         </div>
                      </article>
                   </div>
 
                   <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button-next custom-arrow">
+   <i class="ri-arrow-right-s-line"></i>
+</div>
+<div class="swiper-button-prev custom-arrow">
+   <i class="ri-arrow-left-s-line"></i>
+</div>
                </div>
             </div>
          </section>
 
+         <div class="project-modal" id="projectModal">
+   <div class="project-modal__content">
+      <span class="close-modal">&times;</span>
+
+      <img id="modalImg" class="project-modal__img">
+
+      <h2 id="modalTitle"></h2>
+      <p id="modalSubtitle"></p>
+      <p id="modalDesc"></p>
+   </div>
+</div>
+
          <!--==================== WORK ====================-->
          <section class="work section">
             <h2 class="section__title">
-               <span>My Work</span>
-               <br> Experience
+               <span>Organisasi &</span>
+               <br> Pendidikan
             </h2>
 
             <div class="work__container container grid">
                <div class="work__tabs">
                   <!-- Button Experience -->
                    <button class="work__button work-active" data-target="#experience">
-                     Experience <i class="ri-briefcase-3-line"></i>
+                     Organisasi <i class="ri-briefcase-3-line"></i>
                    </button>
 
                    <!-- Button Education -->
                    <button class="work__button" data-target="#education">
-                     Education <i class="ri-graduation-cap-line"></i>
+                     Pendidikan <i class="ri-graduation-cap-line"></i>
                    </button>
                </div>
 
@@ -277,45 +424,45 @@
                      <div class="work__card">
                         <div class="work__data">
                            <div>
-                              <h1 class="work__title">Developer</h1>
-                              <h3 class="work__subtitle">Google Inc</h3>
+                              <h1 class="work__title">Wakil <br> Ketua OSIS</h1>
+                              <h3 class="work__subtitle">MTS SA Roudhotus Syifa'</h3>
                            </div>
 
                            <h2 class="work__year">2020</h2>
                         </div>
 
                         <p class="work__description">
-                           Web developer handling technologies such as Angular, database, CMS, assisting with web opotimization
+                           Membantu ketua dalam mengoordinasikan kegiatan organisasi serta menjaga kerja sama antaranggota.
                         </p>
                      </div>
 
                      <div class="work__card">
                         <div class="work__data">
                            <div>
-                              <h1 class="work__title">Web <br> Designer</h1>
-                              <h3 class="work__subtitle"></h3>
+                              <h1 class="work__title">Ketua OSIS</h1>
+                              <h3 class="work__subtitle">MTS SA Roudhotus Syifa'</h3>
                            </div>
 
-                           <h2 class="work__year">2022</h2>
+                           <h2 class="work__year">2021</h2>
                         </div>
 
                         <p class="work__description">
-                           Web developer handling technologies such as Angular, database, CMS, assisting with web opotimization
+                           Memimpin organisasi siswa, mengatur program kerja, dan bertanggung jawab atas pelaksanaan kegiatan sekolah.
                         </p>
                      </div>
 
                      <div class="work__card">
                         <div class="work__data">
                            <div>
-                              <h1 class="work__title">SEO & Web <br> Optimization</h1>
-                              <h3 class="work__subtitle"></h3>
+                              <h1 class="work__title">Bendahara</h1>
+                              <h3 class="work__subtitle">OSIS SMK Brantas Karangkates</h3>
                            </div>
 
-                           <h2 class="work__year">Now</h2>
+                           <h2 class="work__year">2024</h2>
                         </div>
 
                         <p class="work__description">
-                           Web developer handling technologies such as Angular, database, CMS, assisting with web opotimization
+                           Mengelola keuangan organisasi, mencatat pemasukan dan pengeluaran, serta menyusun laporan keuangan dengan baik.
                         </p>
                      </div>
                    </div>
@@ -325,45 +472,42 @@
                      <div class="work__card">
                         <div class="work__data">
                            <div>
-                              <h1 class="work__title">Systems <br> Engineering </h1>
-                              <h3 class="work__subtitle">University</h3>
+                              <h1 class="work__title">SDN 03 <br> Arjosari </h1>
                            </div>
 
-                           <h2 class="work__year">2015</h2>
+                           <h2 class="work__year1">2014 - 2020</h2>
                         </div>
 
                         <p class="work__description">
-                           Web developer handling technologies such as Angular, database, CMS, assisting with web opotimization
+                           -
                         </p>
                      </div>
 
                      <div class="work__card">
                         <div class="work__data">
                            <div>
-                              <h1 class="work__title">Software <br> Engineering </h1>
-                              <h3 class="work__subtitle">University</h3>
+                              <h1 class="work__title">MTS SA <br> Roudhotus Syifa' </h1>
                            </div>
 
-                           <h2 class="work__year">2015</h2>
+                           <h2 class="work__year1">2020 - 2023</h2>
                         </div>
 
                         <p class="work__description">
-                           Web developer handling technologies such as Angular, database, CMS, assisting with web opotimization
+                           -
                         </p>
                      </div>
 
                      <div class="work__card">
                         <div class="work__data">
                            <div>
-                              <h1 class="work__title">Systems <br> UI/UX </h1>
-                              <h3 class="work__subtitle">University</h3>
+                              <h1 class="work__title">SMK <br> Brantas Karangkates</h1>
                            </div>
 
-                           <h2 class="work__year">2015</h2>
+                           <h2 class="work__year1">2023 - 2026</h2>
                         </div>
 
                         <p class="work__description">
-                           Web developer handling technologies such as Angular, database, CMS, assisting with web opotimization
+                           Rekayasa Perangkat Lunak
                         </p>
                      </div>
                    </div>
@@ -371,83 +515,11 @@
             </div>
          </section>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            <h2 class="section__title">What I <span> Offer </span></h2>
-
-            <div class="services__container container grid">
-               <!-- Services Developer -->
-                <div class="services__card services-open">
-                  <div class="blob"></div>
-
-                  <div class="services__data">
-                     <h2 class="services__title">Developer</h2>
-                     <p class="services__description">
-                        Website creation with HTML, CSS, JavaScript.
-                        Profesional website eith TypeScript, React, 
-                        Node JS, and lots of creativity.
-                     </p>
-                  </div>
-
-                  <div class="services__info">
-                     <h3 class="services__subtitle">Skills & Tools</h3>
-
-                     <ul class="services__skills">
-                        <li class="services__skill">HTML</li>
-                        <li class="services__skill">CSS</li>
-                        <li class="services__skill">JavaScript</li>
-                        <li class="services__skill">React</li>
-                        <li class="services__skill">Node JS</li>
-                        <li class="services__skill">Next JS</li>
-                        <li class="services__skill">Python</li>
-                        <li class="services__skill">Github</li>
-                     </ul>
-                  </div>
-
-                  <button class="services__button">
-                     <i class="ri-arrow-down-s-line"></i>
-                  </button>
-                </div>
-
-                <!-- Services Design -->
-                <div class="services__card services-close">
-                  <div class="blob blob-2"></div>
-
-                  <div class="services__data">
-                     <h2 class="services__title">Design</h2>
-                     <p class="services__description">
-                        Web designer with Figma and Sketch, creating
-                        motion designs with After Effect, creativity
-                        and design at its best.
-                     </p>
-                  </div>
-
-                  <div class="services__info">
-                     <h3 class="services__subtitle">Skills & Tools</h3>
-
-                     <ul class="services__skills">
-                        <li class="services__skill">Figma</li>
-                        <li class="services__skill">Adobe XD</li>
-                        <li class="services__skill">Photoshop</li>
-                        <li class="services__skill">Ilustrator</li>
-                        <li class="services__skill">Sketch</li>
-                        <li class="services__skill">3D Modeling</li>
-                        <li class="services__skill">After Effect</li>
-                     </ul>
-                  </div>
-
-                  <button class="services__button">
-                     <i class="ri-arrow-down-s-line"></i>
-                  </button>
-                </div>
-            </div>
-         </section>
-
          <!--==================== TESTIMONIALS ====================-->
          <section class="testimonials section">
             <h2 class="section__title">
-               <span>What They Say</span>
-               <br> About Me
+               <span>Keahlian</span>
+               <br> Saya
             </h2>
 
             <div class="testimonials__container container grid">
@@ -457,27 +529,12 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-1.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Abex Wrooks</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/ini logo.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">C#</h2>
+                           <span class="testimonials__subtitle">Bahasa Pemrograman</span>
                         </div>
-
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
                      </div>
                   </article>
 
@@ -485,27 +542,12 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-2.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Willer Morth</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/js.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">JavaScript</h2>
+                           <span class="testimonials__subtitle">Bahasa Pemrograman</span>
                         </div>
-
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
                      </div>
                   </article>
 
@@ -513,27 +555,12 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-3.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Leni Agustina</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/dart.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Dart</h2>
+                           <span class="testimonials__subtitle">Bahasa Pemrograman</span>
                         </div>
-
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
                      </div>
                   </article>
 
@@ -541,27 +568,64 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-4.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Jems Guiller</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/python.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Python</h2>
+                           <span class="testimonials__subtitle">Bahasa Pemrograman</span>
                         </div>
+                     </div>
+                  </article>
 
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/type script.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">TypeScript</h2>
+                           <span class="testimonials__subtitle">Bahasa Pemrograman</span>
+                        </div>
+                     </div>
+                  </article>
+
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/css.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">CSS</h2>
+                           <span class="testimonials__subtitle">Styling</span>
+                        </div>
+                     </div>
+                  </article>
+
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/tailwind css.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Tailwind CSS</h2>
+                           <span class="testimonials__subtitle">Styling</span>
+                        </div>
+                     </div>
+                  </article>
+
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/word.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Microsoft Word</h2>
+                           <span class="testimonials__subtitle">Document Editing</span>
+                        </div>
                      </div>
                   </article>
                 </div>
@@ -572,27 +636,12 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-1.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Abex Wrooks</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/html.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">HTML</h2>
+                           <span class="testimonials__subtitle">Markup</span>
                         </div>
-
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
                      </div>
                   </article>
 
@@ -600,27 +649,12 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-2.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Willer Morth</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/flutter.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Flutter</h2>
+                           <span class="testimonials__subtitle">Framework</span>
                         </div>
-
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
                      </div>
                   </article>
 
@@ -628,27 +662,12 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-3.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Leni Agustina</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/nj.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Next.JS</h2>
+                           <span class="testimonials__subtitle">Framework</span>
                         </div>
-
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
                      </div>
                   </article>
 
@@ -656,27 +675,64 @@
                      <div class="blob"></div>
 
                      <div class="testimonials__data">
-                        <img src="assets/img/testimonial-4.png" alt="image" class="testimonials__img">
-
-                        <h2 class="testimonials__name">Jems Guiller</h2>
-
-                        <div class="testimonials__rating">
-                           <div class="testimonials__stars">
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                              <i class="ri-star-line"></i>
-                           </div>
-
-                           <h3 class="testimonials__number">5.0</h3>
+                        <img src="assets/img/figma.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Figma</h2>
+                           <span class="testimonials__subtitle">Design Tools</span>
                         </div>
+                     </div>
+                  </article>
 
-                        <p>
-                           The company offers many easy-to-use services,
-                           with hard work and round-the-clock support on
-                           all projects.
-                        </p>
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/canva.jpg" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Canva</h2>
+                           <span class="testimonials__subtitle">Design Tools</span>
+                        </div>
+                     </div>
+                  </article>
+
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/mysql.png" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">MySQL</h2>
+                           <span class="testimonials__subtitle">Database</span>
+                        </div>
+                     </div>
+                  </article>
+
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/postgre.jpg" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">PostgreeSQL</h2>
+                           <span class="testimonials__subtitle">Database</span>
+                        </div>
+                     </div>
+                  </article>
+
+                  <article class="testimonials__card">
+                     <div class="blob"></div>
+
+                     <div class="testimonials__data">
+                        <img src="assets/img/excel.jpg" alt="image" class="testimonials__img">
+        
+                        <div class="testimonials__info">
+                           <h2 class="testimonials__name">Microsoft Excel</h2>
+                           <span class="testimonials__subtitle">Data Processing</span>
+                        </div>
                      </div>
                   </article>
                 </div>
@@ -687,9 +743,7 @@
          <section class="contact section" id="contact">
             <div class="contact__container container grid">
                <div class="contact__data">
-                  <h2 class="section__title">Contact Me</h2>
-
-                  <p class="contact__description">Tell me about your next project.</p>
+                  <h2 class="section__title">Kontak saya</h2>
 
                   <button class="contact__button button" id="contact-btn">
                      Copy email <i class="ri-file-copy-line"></i>
@@ -707,48 +761,28 @@
                      </div>
 
                      <div>
-                        <h3 class="contact__title">Location</h3>
+                        <h3 class="contact__title">Lokasi</h3>
                         <address class="contact__address">Kab. Malang, Jawa Timur.</address>
                      </div>
                   </div>
 
                   <div class="contact__social">
-                     <h3 class="contact__title">Social Media</h3>
+                     <h3 class="contact__title">Sosial Media</h3>
 
                      <div class="contact__links">
-                        <a href="https://www.linkedin.com/" target="_blank" class="contact__link">
-                           Linkedin
-                           <i class="ri-arrow-right-up-long-line"></i>
-                        </a>
-
                         <a href="https://github.com/monicabelajar17" target="_blank" class="contact__link">
                            Github
-                           <i class="ri-arrow-right-up-long-line"></i>
-                        </a>
-
-                        <a href="https://dribbble.com/" target="_blank" class="contact__link">
-                           Dribbble
-                           <i class="ri-arrow-right-up-long-line"></i>
-                        </a>
-
-                        <a href="https://about.gitlab.com/" target="_blank" class="contact__link">
-                           Gitlab
                            <i class="ri-arrow-right-up-long-line"></i>
                         </a>
                      </div>
                   </div>
 
                   <div class="contact__write">
-                     <h3 class="contact__title">Write Me & We'll Talk</h3>
+                     <h3 class="contact__title">Kirim pesan, saya siap membantu Anda</h3>
 
                      <div class="contact__links">
                         <a href="https://api.whatsapp.com/send?phone=+6285872687184&text=Hello,%20more%20information!" target="_blank" class="contact__link">
                            WhatsApp
-                           <i class="ri-arrow-right-up-long-line"></i>
-                        </a>
-
-                        <a href="https://m.me/bedimcode" target="_blank" class="contact__link">
-                           Messenger
                            <i class="ri-arrow-right-up-long-line"></i>
                         </a>
 

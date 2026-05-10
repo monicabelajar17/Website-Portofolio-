@@ -48,6 +48,11 @@ const swiperProjects = new Swiper('.projects__swiper', {
     clickable: true,
   },
 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -208,3 +213,56 @@ sr.reveal(`.home__social .home__cv`, {delay: 1500})
 sr.reveal(`.about__data`, {origin: 'left'})
 sr.reveal(`.about__image`, {origin: 'right'})
 sr.reveal(`.services__card`, {interval: 100})
+
+const modal = document.getElementById("projectModal")
+
+const title = document.getElementById("modalTitle")
+const subtitle = document.getElementById("modalSubtitle")
+const desc = document.getElementById("modalDesc")
+const img = document.getElementById("modalImg")
+
+document.querySelectorAll(".open-project").forEach(btn => {
+   btn.addEventListener("click", function(e){
+      e.preventDefault()
+
+      title.textContent = this.dataset.title
+      subtitle.textContent = this.dataset.subtitle
+      desc.textContent = this.dataset.desc
+      img.src = this.dataset.img
+
+      modal.style.display = "flex"
+   })
+})
+
+document.querySelector(".close-modal").onclick = () =>{
+   modal.style.display = "none"
+}
+
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu Muncul */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/* Menu Sembunyi (Klik Tombol X) */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/* Menu Sembunyi Saat Link Diklik */
+const navLink = document.querySelectorAll('.nav__link')
+
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    // Saat kita klik setiap nav__link, kita hapus class show-menu
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
